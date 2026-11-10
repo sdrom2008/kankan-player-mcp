@@ -1,0 +1,35 @@
+{
+  "name": "kankan-player-mcp",
+  "displayName": "看看播放器 · 云端控制",
+  "version": "1.0.0",
+  "description": "Control logged-in 看看播放器 desktop and phone players through your account. Install, paste a kkp_ key from the account page, then talk to the official API.",
+  "author": {
+    "name": "KankanPlayer",
+    "email": "support@kankanplayer.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "kankanplayer",
+    "kankan-player",
+    "player",
+    "mcp",
+    "remote-mcp"
+  ],
+  "homepage": "https://kankanplayer.com",
+  "repository": "https://github.com/sdrom2008/kankan-player-mcp",
+  "mcpServers": "mcp.json",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "KANKAN_PLAYER_MCP_API_KEY": {
+        "type": "string",
+        "title": "看看播放器密钥",
+        "description": "看看播放器 website → account page, after an admin enables Grok Bot. Starts with kkp_. Shown once. Never commit this value."
+      }
+    },
+    "required": [
+      "KANKAN_PLAYER_MCP_API_KEY"
+    ]
+  },
+  "logo": "assets/logo.png"
+}

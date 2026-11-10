@@ -1,0 +1,20 @@
+{
+  "name": "kankan-player-mcp",
+  "owner": {
+    "name": "KankanPlayer",
+    "email": "support@kankanplayer.com"
+  },
+  "metadata": {
+    "description": "Remote HTTPS MCP for 看看播放器. Control logged-in desktop and phone players through an account key."
+  },
+  "logo": "assets/logo.png",
+  "plugins": [
+    {
+      "name": "kankan-player-mcp",
+      "source": ".",
+      "description": "Remote HTTPS MCP for 看看播放器. Install, paste a kkp_ key, then reach kankanplayer.com.",
+      "version": "1.0.0",
+      "logo": "assets/logo.png"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "kankan-player": {
+      "url": "https://kankanplayer.com/api/bot-mcp/v1/mcp",
+      "headers": {
+        "Authorization": "Bearer ${KANKAN_PLAYER_MCP_API_KEY}"
+      }
+    }
+  }
+}
