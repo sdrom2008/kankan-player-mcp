@@ -28,8 +28,7 @@ Commands live for two minutes. The tool waits a short time for the player to ans
 ### What this is not
 - Not the main 看看播放器 product repo
 - No local database, no media files, no playback engine
-- Not the Windows **local** plugin (`%USERPROFILE%\.grok\plugins\kankan-player`), which talks to a loopback control server on the same PC
-- This cloud connector does not attach to a window on this computer by itself. The desktop player must be open, logged in to the same account, and have Grok Bot enabled
+- This connector talks to the official API. Keep 看看播放器 open and logged in on the computer or phone you want to control, with Grok Bot enabled for the account
 
 ### Install (recommended) — remote HTTPS
 
@@ -92,7 +91,7 @@ Optional `KANKAN_PLAYER_MCP_ALLOWED_HOST_SUFFIX` defaults to `kankanplayer.com` 
 ### Tools
 | Tool | Purpose |
 |------|---------|
-| `account_status` | Whether this key can control logged-in players |
+| `account_status` | Whether this key can control logged-in players, and which ones are currently listening |
 | `player_status` | What the player is playing |
 | `player_playlist` | Current list |
 | `player_pause` / `player_resume` / `player_toggle` / `player_stop` | Playback |
@@ -124,6 +123,6 @@ MIT
 3. 把密钥填进助手的安全卡或插件变量，不要写进仓库或网址。
 4. 电脑或手机上的看看播放器保持打开，并登录同一个账号。
 
-云端这条路走的是账号，不是本机窗口。Windows 上另外还有一个只连本机播放器的本地插件，和这个仓库不是一回事。
+云端这条路走的是账号。要控制哪台电脑或手机，就在那台上打开看看播放器并保持登录。
 
-先调用 `account_status`，再查看或控制播放。`target` 可以是 `windows`、`android`、`ios`、`phone` 或 `any`。不写时发给先接到的那一台。
+先调用 `account_status`，查看账号是否可用、哪台播放器在线，再查看或控制播放。`target` 可以是 `windows`、`android`、`ios`、`phone` 或 `any`。不写时发给先接到的那一台。

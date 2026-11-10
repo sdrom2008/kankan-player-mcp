@@ -66,4 +66,4 @@ Local Claude Desktop / Cursor can still run the Node shell via `.mcp.stdio.json`
 
 ## What it controls
 
-Logged-in 看看播放器 windows on a computer, or the Android / iOS app, for the same account. It does not replace the Windows local loopback plugin.
+Logged-in 看看播放器 on a computer, or the Android / iOS app, for the same account.

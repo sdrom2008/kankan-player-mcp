@@ -10,4 +10,4 @@
 
 This is not the player source tree. It has no database and no media pipeline.
 
-Cloud control reaches a player that is already open and logged in (Windows, Android, or iOS). The Windows local plugin that talks to a loopback port on the same PC is a different install.
+Cloud control reaches a player that is already open and logged in (Windows, Android, or iOS). Use this connector with a `kkp_` account key; there is no separate local Windows plugin.

@@ -21,11 +21,11 @@ description: >-
 
 ## Smoke after connect
 
-1. Call `account_status` — expect the account to be allowed.
+1. Call `account_status` — expect the account to be allowed, and a list of which players are listening.
 2. Open 看看播放器 on the computer or phone and stay logged in.
 3. Call `player_status`. Then hand off to pause, skip, seek, or play.
 
-This cloud path is account → logged-in players. It is not the Windows local loopback plugin.
+This cloud path is account → logged-in players.
 
 ## Common failures
 
@@ -34,7 +34,7 @@ This cloud path is account → logged-in players. It is not the Windows local lo
 | 401 密钥无效 / 密钥已作废 | Bad, missing, or revoked key | Generate a new key on the account page and paste it again |
 | 403 这个账号的 Grok Bot 已关闭 | Admin has not enabled Grok Bot | Ask an admin to turn it on, then generate a key |
 | Tool waits, no result | Player is closed or not logged in | Open 看看播放器 on the computer or phone and stay signed in |
-| Wanted the window on this PC, but only the cloud plugin is installed | Wrong plugin | The local Windows plugin is a different install; this repo talks to the official API |
+| Wanted to control this PC, but nothing happens | Player is closed or not logged in | Open 看看播放器 on this computer, stay signed in, and use this cloud connector |
 
 ## Optional stdio
 
